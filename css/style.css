@@ -1,0 +1,123 @@
+:root {
+  --primary-cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+.pricing-container {
+  width: 700px;
+  background-color: white;
+  margin: 4rem auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 4rem 4rem;
+}
+
+.intro__heading {
+  color: var(--primary-cyan);
+  font-size: 2.7rem;
+  margin-bottom: 2.7rem;
+}
+
+.heading-sm {
+  font-size: 1.7rem;
+  margin-bottom: 1.3rem;
+}
+.heading-sm--yellow {
+  color: var(--bright-yellow);
+}
+.heading-sm--white {
+  color: white;
+  opacity: 0.93;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+.paragraph--black {
+  color: rgb(97, 97, 97);
+}
+.paragraph--white {
+  color: white;
+  opacity: 0.86;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+
+.pricing {
+  background-color: var(--primary-cyan);
+}
+.pricing__price {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.pricing__price span {
+  opacity: 0.7;
+  font-size: 1.7rem;
+  margin-left: 0.6rem;
+  font-weight: 400;
+}
+
+.pricing__btn {
+  background-color: var(--bright-yellow);
+  border: none;
+  color: white;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.about {
+  background-color: hsl(179, 46%, 52%);
+}
+
+.about__heading {
+  margin-bottom: 1.8rem;
+}
+.about__paragraph {
+  line-height: 1.5;
+}
+
+@media (max-width: 710px) {
+  .pricing-container {
+    width: 94%;
+  }
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+  }
+  .container {
+    padding: 3.5rem 3rem;
+  }
+}
